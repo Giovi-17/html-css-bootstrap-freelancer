@@ -22,6 +22,40 @@ body{
     border: 1px solid white;
 }
 
+.star{
+    width: 10%;
+    position: relative;
+    justify-content: space-around;
+}
+
+.star div.line, .star div.line-right{
+    padding: 0;
+}
+
+div.line, div.line-right{
+    height: 4px;
+    width: 100%;
+    min-width: 50px;
+    max-width: 100px;
+    position: absolute;
+    top: 20px;
+}
+
+div.line{
+    left: -70px;
+}
+
+div.line-right{
+    right: -70px;
+}
+
+.line, .line-right{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 10px;
+    border-color: inherit;
+}
+
 /* HEADER */
 header{
     height: 100px;
@@ -127,6 +161,18 @@ header .col-6:last-child{
     font-weight: bold;
 }
 
+.main-terza-parte .star{
+    width: 100%;
+}
+
+.main-terza-parte div.line{
+    left: 20px;
+}
+
+.main-terza-parte div.line-right{
+    right: 20px;
+}
+
 .main-terza-parte-text-padre{
     flex-direction: column;
 }
@@ -168,6 +214,18 @@ div.main-terza-parte-text{
     text-align: left;
 }
 
+.main-quarta-parte .star{
+    width: 100%;
+}
+
+.main-quarta-parte div.line{
+    left: 20px;
+}
+
+.main-quarta-parte div.line-right{
+    right: 20px;
+}
+
 .main-quarta-parte div.btn{
     margin: 0;
 }
@@ -180,6 +238,10 @@ div.main-quarta-parte-title{
 
 div.main-quarta-parte-star{
     text-align: center;
+}
+
+.main-quarta-parte-star div.line, .main-quarta-parte-star div.line-right{
+     top: -10px;
 }
 
 div.main-quarta-parte-text{
@@ -269,5 +331,39 @@ footer{
     .main-terza-parte-text-padre{
         flex-direction: row;
         justify-content: center;
+    }
+
+    .main-terza-parte div.line{
+        left: 235px;
+    }
+    
+    .main-terza-parte div.line-right{
+        right: 235px;
+    }
+
+    .main-quarta-parte div.line{
+        left: 190px;
+    }
+    
+    .main-quarta-parte div.line-right{
+        right: 190px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main-terza-parte div.line{
+        left: 350px;
+    }
+    
+    .main-terza-parte div.line-right{
+        right: 350px;
+    }
+
+    .main-quarta-parte div.line{
+        left: 235px;
+    }
+    
+    .main-quarta-parte div.line-right{
+        right: 235px;
     }
 }

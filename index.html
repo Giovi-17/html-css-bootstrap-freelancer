@@ -125,8 +125,8 @@
                             <div class="main-terza-parte-text col-md-5">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</div>
 
                         </div>
-            
-                        <div><div class="btn btn-small btn-white"><i class="fas fa-download"></i> <span>Download</span></div></div>
+
+                        <button type="button" class="btn ms_btn-white"><i class="fas fa-download"></i> <span>Download</span></button>
 
                     </div>
         
@@ -142,7 +142,7 @@
 
                 <div class="main-quarta-parte flex">
 
-                    <div class="col-8">
+                    <div class="col-8 col-md-10">
 
                         <div class="main-quarta-parte-title"><span>CONTACT ME</span></div>
         
@@ -150,25 +150,29 @@
             
                         <div class="main-quarta-parte-info">
 
-                            <div>Name</div>
+                            <div class="mb-3">
+                                <label for="form-name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="form-name">
+                            </div>
 
-                            <div class="main-quarta-parte-info-bar"></div>
+                            <div class="mb-3">
+                                <label for="form-email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="form-email">
+                            </div>
 
-                            <div>Email Address</div>
+                            <div class="mb-3">
+                                <label for="form-phone-number" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" id="form-phone-number">
+                            </div>
 
-                            <div class="main-quarta-parte-info-bar"></div>
-
-                            <div>Phone Number</div>
-
-                            <div class="main-quarta-parte-info-bar"></div>
-
-                            <div class="main-quarta-parte-info-last">Message</div>
+                            <div class="mb-3">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea class="form-control" id="form-message" rows="3"></textarea>
+                            </div>
 
                         </div>
-
-                        <div class="main-quarta-parte-info-bar-2"></div>
             
-                        <div><div class="btn btn-s-small btn-green"><span>Send</span></div></div>
+                        <button type="button" class="btn ms_btn-green">Send</button>
             
                     </div>
         

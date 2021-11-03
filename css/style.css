@@ -7,25 +7,17 @@ body{
     display: flex;
 }
 
-.btn{
-    display: inline-block;
-}
-
-.btn-small{
-    padding: 10px 20px;
-}
-
-.btn-s-small{
-    padding: 5px 10px;
-}
-
-.btn-green{
+.ms_btn-green{
     color: white;
     background-color: #1abc9c;
     border: 1px solid #1abc9c;
 }
 
-.btn-white{
+.ms_btn-green:hover, .ms_btn-white:hover{
+    color: white;
+}
+
+.ms_btn-white{
     color: white;
     border: 1px solid white;
 }
@@ -158,6 +150,17 @@ div.main-terza-parte-text{
     flex-direction: column;
     align-items: center;
     color: #2c3e50;
+}
+
+.main-quarta-parte-info input[type="text"],
+.main-quarta-parte-info input[type="email"],
+.main-quarta-parte-info div textarea{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ced4da;
 }
 
 .main-quarta-parte div{
